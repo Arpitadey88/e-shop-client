@@ -1,0 +1,100 @@
+.header-bg {
+    background-color: whitesmoke;
+    border-bottom: 1px solid #FF136F;
+}
+.cart{
+    color: #FF136F;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+}
+
+.logoImg {
+    height: 50px;
+    padding: 5px 0;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 75%;
+    margin: auto;
+}
+
+.lists {
+    text-decoration: none;
+    color: #FF136F;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 3px 10px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+.login-btn {
+    background-color: #ff7d1a;
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 18px;
+    border-radius: 5px;
+  }
+  
+  .login-btn:hover {
+    background-color: #FFC107;
+    color: #fff;
+  }
+  
+.toggler-icon {
+    display: none;
+}
+
+@media screen and (max-width: 788px) {
+    .log {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .navLinksToggle {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #FF136F;
+        left: 0;
+        top: 65px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+        z-index: 500;
+    }
+
+    .lists {
+        color: white;
+        text-align: center;
+        padding: 32px;
+        transition: all 0.5s ease;
+        width: 100%;
+
+    }
+
+    .toggler-icon {
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: #FF136F;
+        background-color: #feeae9;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+    }
+}

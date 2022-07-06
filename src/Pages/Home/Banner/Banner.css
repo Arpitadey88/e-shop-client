@@ -1,0 +1,26 @@
+.panda-bg-color {
+    background-color: #feeae9;
+    height: 500px;
+}
+.carousel-img{
+    height: 390px;
+}
+.rounded-corner {
+    border-radius: 15px;
+}
+
+.btn-color {
+    padding: 10px 50px ;
+    border: none;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #f075a4 46%, #FF136F 100%);
+}
+
+@media screen and (max-width: 425px) {
+    .carousel-img{
+        height: 220px;
+    }
+    .btn-color {
+        padding: 7px 25px ;
+    }
+}

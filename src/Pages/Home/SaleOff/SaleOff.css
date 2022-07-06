@@ -1,0 +1,59 @@
+.support-cta {
+  background: url(../../../images/banner-bg.jpg);
+  height: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  object-fit: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.support-content {
+  position: absolute;
+}
+
+.sale-style h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.sale-style h1 {
+  font-size: 100px;
+  font-weight: 900;
+  color: gold;
+}
+
+.sale-btn {
+  background-color: white;
+  color: #FF136F;
+}
+.sale-btn:hover {
+  background-color: orange;
+  color: white;
+}
+
+.shopping-img {
+  width: 100%;
+  height: 345px;
+}
+
+@media only screen and (max-width: 425px) {
+  .sale-style h2 {
+    font-size: 30px;
+  }
+
+  .sale-style h1 {
+    font-size: 60px;
+  }
+
+  .support-cta {
+    height: 90vh;
+  }
+  .shopping-img {
+    height: 195px;
+    width: 100%;
+  }
+
+}
