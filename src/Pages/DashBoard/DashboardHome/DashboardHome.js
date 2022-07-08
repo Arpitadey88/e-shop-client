@@ -4,10 +4,11 @@ import useAuth from '../../../hooks/useAuth';
 const DashboardHome = () => {
     const { user } = useAuth();
     return (
-        <div className='mt-5 text-center'>
-            <h1 style={{color: '#1E3163'}}> Welcome to Your Dashboard {" "} <br />
-                <span className="text-info">{user.displayName}</span></h1>
+        <div className="dashboard-bg">
+            <h1 className='dashboard-caption'> Welcome to Your Dashboard {" "}
+                <span className="text-info mx-auto">{user.displayName}</span></h1>
         </div>
+
     );
 };
 

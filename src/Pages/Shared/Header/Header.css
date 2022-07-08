@@ -1,54 +1,73 @@
 .header-bg {
     background-color: whitesmoke;
-    border-bottom: 1px solid #FF136F;
+    box-shadow: 0px 3px 1px 0px rgb(0 0 0 / 10%);
 }
-.cart{
-    color: #FF136F;
-}
+
 .navBar {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: ; */
     align-items: center;
     height: 60px;
-
+    padding: 0;
 }
 
-.logoImg {
-    height: 50px;
-    padding: 5px 0;
+.span-e {
+    font-size: 35px;
+    color: #212529;
+    font-weight: 800;
+}
+
+.span-shop {
+    font-size: 35px;
+    color: #f0a202;
+    font-weight: 800;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .navLinks {
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     align-items: center;
     list-style: none;
-    width: 75%;
-    margin: auto;
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+.cart {
+    color: #212529;
 }
 
 .lists {
     text-decoration: none;
-    color: #FF136F;
+    color: #212529;
     font-size: 18px;
-    font-weight: 600;
-    padding: 3px 10px;
-    margin: 0 8px;
+    font-weight: 400;
+    padding-left: 25px;
+    margin: 0;
     cursor: pointer;
 }
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .login-btn {
-    background-color: #ff7d1a;
+    background-color: #f0a202;
     color: #fff;
     padding: 3px 6px;
     font-size: 18px;
     border-radius: 5px;
-  }
-  
-  .login-btn:hover {
-    background-color: #FFC107;
+}
+
+.login-btn:hover {
+    background-color: #ff7d1a;
     color: #fff;
-  }
-  
+}
+
 .toggler-icon {
     display: none;
 }
@@ -69,9 +88,11 @@
         position: absolute;
         display: block;
         list-style: none;
-        background-color: #FF136F;
+        background: linear-gradient(to right, rgba(244, 172, 84, 0.8), rgba(238, 83, 83, 0.8));
+        margin: 0;
+        padding: 10px;
         left: 0;
-        top: 65px;
+        top: 60px;
         transition: all 0.5s ease-out;
         width: 100%;
         z-index: 500;
@@ -79,22 +100,29 @@
 
     .lists {
         color: white;
-        text-align: center;
-        padding: 32px;
+        /* text-align: center; */
+        padding: 10px;
         transition: all 0.5s ease;
         width: 100%;
-
+        z-index: 900;
     }
 
+    .cart {
+        color: white;
+    }
+    .user{
+        display: grid;
+        justify-content: start;
+    }
     .toggler-icon {
         display: block;
         position: absolute;
-        font-size: 30px;
-        color: #FF136F;
-        background-color: #feeae9;
+        font-size: 25px;
+        color: #f0a202;
+        background-color: transparent;
         border: none;
         outline: none;
-        top: 15px;
+        top: 12px;
         right: 25px;
     }
 }

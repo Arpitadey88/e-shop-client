@@ -22,7 +22,7 @@ const BookingOrder = () => {
   const [carts, setCarts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://mysterious-tor-42417.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -56,7 +56,7 @@ const BookingOrder = () => {
   const onSubmit = (data) => {
     data.order = carts;
     data.status = "pending";
-    fetch(`http://localhost:5000/addOrder`, {
+    fetch(`https://mysterious-tor-42417.herokuapp.com/addOrder`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

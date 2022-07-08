@@ -11,7 +11,7 @@ const ProductDetails = () => {
     const { _id } = product;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://mysterious-tor-42417.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
 
@@ -47,9 +47,8 @@ const ProductDetails = () => {
         }
     }
     return (
-        <div className="container py-5">
-
-            <div className="row mt-5 g-4">
+        <div className="py-5 bg-white container">
+            <div className=" row mt-5 g-4">
                 <div className="col-md-6 text-center imgContainer">
                     <div className="d-flex flex-column align-items-center">
                         <img src={product.image} className="w-50 pb-2 cursor-pointer" alt="" />
@@ -64,7 +63,7 @@ const ProductDetails = () => {
                 </div>
                 <div className="col-md-6">
                     <h3>{product.title}</h3>
-                    <h4>{product.price}</h4>
+                    <h4 style={{ color: 'brown' }}>{product.price}</h4>
                     <h6>{product.category}</h6>
                     <h6>{product.description}</h6>
                     <h6>Available : <span className='text-success'>In stock</span></h6>
@@ -74,15 +73,15 @@ const ProductDetails = () => {
                         fullSymbol="fas fa-star icon-color"
                         readonly>
                     </Rating>
-                    <div className="input-group w-25 py-2">
+                    {/* <div className="input-group w-25 py-2">
                         <button type='button' onClick={handleDecrement} className='input-group-text'> <i class="fa fa-minus"></i> </button>
                         <div className='form-control text-center '>{quantity}</div>
                         <button type='button' onClick={handleIncrement} className='input-group-text'> <i class="fa fa-plus"></i></button>
-                    </div>
+                    </div> */}
                     <div>
-                        <button onClick={() => handleAddToDb(_id)} style={{ backgroundColor: '#FF136F', color: 'white' }} className="btn product-btn px-4 mt-3"> Add To Cart</button>
+                        <button onClick={() => handleAddToDb(_id)} style={{ backgroundColor: '#f0a202', color: 'white' }} className="btn product-btn px-4 my-2"> Add To Cart</button>
                     </div>
-                    <div style={{ backgroundColor: 'whiteSmoke', width: '450px' }} className=' mt-3 px-3 py-2'>
+                    <div style={{ backgroundColor: 'whiteSmoke', width: '450px' }} className=' mt-4 px-3 py-2'>
                         <ul>
                             <li><small>Product color may slightly vary, depending on your device's screen resolution</small></li>
                             <li><small>10% vat will be included for each product</small></li>

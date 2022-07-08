@@ -9,7 +9,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/addProducts', data)
+        axios.post('https://mysterious-tor-42417.herokuapp.com/addProducts', data)
             .then(res => {
                 if (res.data.insertedId) {
                     Swal.fire({

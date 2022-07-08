@@ -1,20 +1,39 @@
 .social-links {
-    margin-top: 5px;
-  }
-  .social-links a {
-    font-size: 16px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    line-height: 1;
-    margin-right: 8px;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-  }
-  .social-links a:hover {
-    background: #FFC107;
-  }
+  margin-top: 5px;
+}
+
+.social-links a {
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+
+.social-links a:hover {
+  background: #FFC107;
+}
+
+.dashboard-bg {
+  background: linear-gradient(to right, rgba(250, 158, 44, .8), rgba(255, 54, 54, 0.8)), url("../../../images/dashboard.jpg") bottom center no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  z-index: 500;
+}
+
+.dashboard-caption {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+}

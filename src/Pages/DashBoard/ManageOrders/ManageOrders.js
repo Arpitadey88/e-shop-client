@@ -6,7 +6,7 @@ const ManageOrders = () => {
   const Swal = require("sweetalert2");
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://mysterious-tor-42417.herokuapp.com/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [orders]);
@@ -23,7 +23,7 @@ const ManageOrders = () => {
       cancelButtonText: "No",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/deleteOrders/${id}`, {
+        fetch(`https://mysterious-tor-42417.herokuapp.com/deleteOrders/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -46,7 +46,7 @@ const ManageOrders = () => {
       id: id,
       status: "approved",
     };
-    fetch("http://localhost:5000/orderStatusUpdate", {
+    fetch("https://mysterious-tor-42417.herokuapp.com/orderStatusUpdate", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(status),

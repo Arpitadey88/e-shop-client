@@ -6,7 +6,7 @@ const ManageProducts = () => {
   const [products, setProducts] = useState([]);
   let count = 0;
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://mysterious-tor-42417.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [products]);
@@ -23,7 +23,7 @@ const ManageProducts = () => {
       cancelButtonText: "No",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/deleteSingleProduct/${id}`, {
+        fetch(`https://mysterious-tor-42417.herokuapp.com/deleteSingleProduct/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

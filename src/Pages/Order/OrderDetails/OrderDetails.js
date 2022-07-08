@@ -4,13 +4,14 @@ import { Button, Col, Row, Table } from "react-bootstrap";
 import { getStoredCart, removeFromDb } from '../../utilities/fakedb';
 
 const OrderDetails = () => {
+    // const {qut, setQut} = useCart();
     const Swal = require("sweetalert2");
     const navigate = useNavigate();
     const [products, setProducts] = useState([]);
     const [carts, setCarts] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products`)
+        fetch(`https://mysterious-tor-42417.herokuapp.com/products`)
             .then(res => res.json())
             .then(data => setProducts(data));
 

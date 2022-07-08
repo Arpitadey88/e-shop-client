@@ -8,7 +8,7 @@ const MyOrders = () => {
   const email = user.email;
   // console.log(email);
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrders/${email}`)
+    fetch(`https://mysterious-tor-42417.herokuapp.com/myOrders/${email}`)
       .then((res) => res.json())
       .then((data) => setMyOrders(data));
   }, [email]);
