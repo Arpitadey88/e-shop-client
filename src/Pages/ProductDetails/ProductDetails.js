@@ -81,7 +81,7 @@ const ProductDetails = () => {
                     <div>
                         <button onClick={() => handleAddToDb(_id)} style={{ backgroundColor: '#f0a202', color: 'white' }} className="btn product-btn px-4 my-2"> Add To Cart</button>
                     </div>
-                    <div style={{ backgroundColor: 'whiteSmoke', width: '450px' }} className=' mt-4 px-3 py-2'>
+                    <div className=' info-product mt-4 px-3 py-2'>
                         <ul>
                             <li><small>Product color may slightly vary, depending on your device's screen resolution</small></li>
                             <li><small>10% vat will be included for each product</small></li>

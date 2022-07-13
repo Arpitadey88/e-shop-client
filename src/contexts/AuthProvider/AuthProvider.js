@@ -5,7 +5,7 @@ import useFirebase from '../../hooks/useFirebase';
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
-    let allContexts = useFirebase();
+    const allContexts = useFirebase();
     // const {qut, setQut} = useCart();
     // allContexts = {...useFirebase, qut, setQut}
     return (

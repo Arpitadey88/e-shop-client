@@ -1,4 +1,4 @@
-.support-cta {
+.sale-area {
   background: url(../../../images/banner-bg.jpg);
   height: 345px;
   display: flex;
@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.support-content {
+.sale-content {
   position: absolute;
 }
 
@@ -48,7 +48,7 @@
     font-size: 60px;
   }
 
-  .support-cta {
+  .sale-area {
     height: 90vh;
   }
   .shopping-img {

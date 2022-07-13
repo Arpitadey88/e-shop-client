@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Container, Spinner, Table } from "react-bootstrap";
+import './ManageOrders.css';
 
 const ManageOrders = () => {
   let count = 0;
@@ -69,7 +70,7 @@ const ManageOrders = () => {
 
   return (
     <Container fluid>
-      <div className="d-flex justify-content-center py-1">
+      <div className="d-flex justify-content-center  py-1">
         <h2>Manage All Orders</h2>
       </div>
       {orders.length ? (
@@ -93,7 +94,7 @@ const ManageOrders = () => {
               <th className="fs-6 text-white">Action</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-center">
             {/* looping data */}
 
             {orders.map((order) => (
@@ -102,28 +103,26 @@ const ManageOrders = () => {
                 <td className="fs-6 text-white ">{order.email}</td>
                 <td className="fs-6 text-white ">{order._id.slice(20, 30)}</td>
                 <td className="fs-6 text-white ">${parseFloat(order.order[0].price) * parseFloat(order.order[0].quantity)}</td>
-                <td className="fs-6 text-white ">
+                <td className="fs-6 text-white">
                   {order.payment ? "Unpaid" : "Paid"}
                 </td>
-                <td className="fs-6 text-white ">
+                <td className="fs-6">
                   {order.status === "approved" ? (
                     "Approved"
                   ) : (
-                    <Button
-                      variant="primary"
-                      onClick={() => handleStatusUpdate(order._id)}
-                    >
-                      Approved
-                    </Button>
+                      <button className="rmv-btn"
+                        onClick={() => handleStatusUpdate(order._id)}
+                      >
+                        Approved
+                      </button>
                   )}
                 </td>
-                <td className="fs-6 text-white ">
-                  <Button
-                    variant="primary"
+                <td className=" text-white ">
+                  <button className="rmv-btn"
                     onClick={() => handleDeleteOrder(order._id)}
                   >
                     Remove
-                  </Button>
+                  </button>
                 </td>
               </tr>
             ))}

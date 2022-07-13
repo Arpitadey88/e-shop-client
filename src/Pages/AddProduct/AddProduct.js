@@ -29,7 +29,7 @@ const AddProduct = () => {
                 <input {...register("title")} required placeholder="Title" />
                 <input {...register("category")} required placeholder="Category" />
                 <textarea {...register("description")} required placeholder="Description" />
-                <input {...register("price")} type="number" required placeholder="Price" />
+                <input {...register("price")}  required placeholder="Price" />
                 <input {...register("rating")} required placeholder="Rating" />
                 {errors.exampleRequired && <span>This field is required</span>}
                 <input type="submit" />

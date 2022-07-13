@@ -7,3 +7,13 @@
     display: flex;
     justify-content: flex-end;
 }
+.info-product{
+    background-color: whitesmoke;
+    width: 450px;
+}
+@media screen and (max-width: 788px){
+    .info-product{
+        width: 268px;
+        padding: 10px;
+    }
+}

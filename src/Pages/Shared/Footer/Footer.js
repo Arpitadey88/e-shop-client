@@ -4,29 +4,29 @@ import './Footer.css';
 const Footer = () => {
     return (
 
-        <div className="text-white border bg-dark">
+        <div style={{backgroundColor: '#CFD2CF'}}>
             <div className="container pt-2 pb-0">
                 <hr />
                 <div className="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-4">
                     <div className="col border-0">
-                        <h4 className="fw-bold text-warning">Company</h4>
+                        <h4 className="fw-bold">Company</h4>
                         <h6>About</h6>
                         <h6>General</h6>
                     </div>
                     <div className="col border-0">
-                        <h4 className="fw-bold text-warning">Explore</h4>
+                        <h4 className="fw-bold">Explore</h4>
                         <h6>FAQ</h6>
                         <h6>Spin To Win</h6>
                         <h6>Leader Board</h6>
                     </div>
                     <div className="col border-0">
-                        <h4 className="fw-bold text-warning">Help</h4>
+                        <h4 className="fw-bold">Help</h4>
                         <h6>Support Center</h6>
                         <h6>Payment Sequrity</h6>
                         <h6>Privacy Policy</h6>
                     </div>
                     <div className="col border-0">
-                        <h4 className="text-warning fw-bold">Terms and Conditions</h4>
+                        <h4 className=" fw-bold">Terms and Conditions</h4>
                         <form className="row g-3 pt-1">
                             <div className="col-auto">
                                 <input type="email" className="form-control text-secondary fw-bold border-0 w-75"
@@ -46,7 +46,7 @@ const Footer = () => {
 
                     </div>
                     <p><small><span className="text-secondary fw-bold">Copyright © All Rights Reserved by</span> <span
-                        className="text-warning fw-bold">e-shop</span></small></p>
+                        className=" fw-bold">e-shop</span></small></p>
                 </div>
             </div>
         </div>

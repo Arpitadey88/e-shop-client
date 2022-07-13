@@ -50,6 +50,9 @@
     margin: 0;
     cursor: pointer;
 }
+.lists:hover, .cart:hover{
+    color: #f0a202;
+}
 .user{
     display: flex;
     justify-content: center;

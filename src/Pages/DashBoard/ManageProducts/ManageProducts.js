@@ -43,7 +43,7 @@ const ManageProducts = () => {
   return (
     <Container fluid>
       <h2 style={{ color: '#1E3163' }} className="fs-3 fw-bold text-center">
-        <i style={{ color: '#1E3163' }} class="fas fa-shopping-bag "></i> Product Information
+        <i style={{ color: '#1E3163' }} class="fas fa-shopping-bag "></i> Product Information : {products.length}
       </h2>
       <hr className="mx-auto w-50 bg-dark"/>
       {products.length ? (

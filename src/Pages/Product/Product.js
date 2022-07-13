@@ -5,12 +5,12 @@ import { addToDb } from '../utilities/fakedb';
 import '../Products/Products.css';
 
 const Product = ({ product }) => {
-    const { _id, title, description, image, category, price, rating } = product;
+    const { _id, title, image, price, rating } = product;
     console.log(product);
 
     return (
-        <div className="single-product p-0 my-3 col mx-auto  text-center" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <div className="text-center"><img className="py-2 product-image " src={image} alt="" />
+        <div className="single-product p-0 my-3 col mx-auto text-center" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div className="text-center"><img className="pt-4 pb-3 product-image " src={image} alt="" />
             </div>
 
             <div className="px-1 pt-2">

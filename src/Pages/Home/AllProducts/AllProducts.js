@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Product from '../Product/Product';
-import './Products.css';
+import Product from '../../Product/Product';
 
-const Products = () => {
+const AllProducts = () => {
     const [products, setProducts] = useState([]);
     const [displayProducts, setDisplayProducts] = useState([]);
     useEffect(() => {
@@ -10,7 +9,7 @@ const Products = () => {
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
-                setDisplayProducts(data.slice(0, 4));
+                setDisplayProducts(data);
             });
         // console.log(products);
     }, []);
@@ -22,18 +21,11 @@ const Products = () => {
     }
 
     return (
-        <div className='container my-5 product-bg' id='products'>
-            <div className="row d-flex align-items-center justify-content-between  mx-auto py-md-3">
-                <div className="col-md-6">
-                    <h2 className=" ">Product Categoris </h2>
+        <div className='container my-5 product-bg text-center ' id='products'>
+            <h2 className="pt-md-5">Our Products </h2>
 
-                    {/* <div className="search-container w-25 border rounded-1 ms-auto me-5 my-md-4">
-
-                    </div> */}
-                </div>
-                <div className="col-md-6 search-container w-25 border rounded-1 w-25 rounded-1 me-3 py-1 px-0">
-                    <input onChange={handleSearch} placeholder="&#xF002; Search" className="form-control w-100 border-0 fa mx-0" type="search" aria-label="Search" />
-                </div>
+            <div className="search-container w-25 border rounded-1 py-1 ms-auto me-5 my-md-4">
+                <input onChange={handleSearch} placeholder="&#xF002; Search" className="form-control w-100 border-0 fa" type="search" aria-label="Search" />
             </div>
             <div className="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-4 mx-1 py-2">
                 {
@@ -47,4 +39,4 @@ const Products = () => {
     )
 };
 
-export default Products;
+export default AllProducts;

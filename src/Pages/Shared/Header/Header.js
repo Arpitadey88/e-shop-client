@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
-import logo from '../../../images/eshop.png';
 import { getStoredCart } from '../../utilities/fakedb';
 import './Header.css';
 
@@ -29,7 +28,7 @@ const Header = () => {
                     onClick={() => { setToggleBar(false) }}>
                     <Link to="/" className="link"><li className="lists">Home</li></Link>
                     <Link to="/about" className="link"><li className="lists">About</li></Link>
-                    <Link to="/products" className="link"><li className="lists">Products</li></Link>
+                    <Link to="/allProducts" className="link"><li className="lists">Products</li></Link>
                     <Link to="/orderDetails" className="link"><li className="lists"><i className="bi bi-cart2 fs-5 fw-bold cart"></i> {" "}
                         <span className="cart text-decoration-none">{qut}</span>
                     </li></Link>

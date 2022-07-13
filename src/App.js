@@ -9,7 +9,9 @@ import ManageOrders from './Pages/DashBoard/ManageOrders/ManageOrders';
 import ManageProducts from './Pages/DashBoard/ManageProducts/ManageProducts';
 import MyOrders from './Pages/DashBoard/Orders/MyOrders';
 import About from './Pages/Home/About/About';
+import AllProducts from './Pages/Home/AllProducts/AllProducts';
 import Home from './Pages/Home/Home/Home';
+import Items from './Pages/Home/Items/Item';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
@@ -33,6 +35,8 @@ function App() {
               <Route path="/login" element={<Login />}></Route>
               <Route path="/register" element={<Register />}></Route>
               <Route path="/products" element={<Products />}></Route>
+              <Route path="/allProducts" element={<PrivateRoute><AllProducts /></PrivateRoute>}></Route>
+              <Route path="/items" element={<Items />}></Route>
               <Route path="/details/:productId" element={<ProductDetails />}></Route>
               <Route path="/booking" element={<PrivateRoute><BookingOrder /></PrivateRoute>}></Route>
               <Route path="/orderDetails" element={<PrivateRoute><OrderDetails /></PrivateRoute>}></Route>

@@ -58,22 +58,38 @@
     background-color: dodgerblue;
 }
 
-.cards img {
+.card-img, .cards img {
     width: 100px;
     padding: 0 5px;
 }
 
 @media screen and (max-width: 426px) {
     .card {
-        width: 340px;
+        width: 100%;
         display: flex;
         align-items: center;
+    }
+    
+    .card-img {
+        width: 20px;
+        padding: 0 5px;
+    }
+    .shipping-form input, .input-field input{
+        width: 100%;
+    }
+    .first-row {
+        display: grid;
     }
     .cards img {
         width: 80px;
         padding: 0 5px;
     }
-    .shipping-form input {
-        width: 340px;
+    .btn-confirm {
+        background-color: blueviolet;
+        color: white;
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 18px;
+        transition: 0.5s;
     }
 }
