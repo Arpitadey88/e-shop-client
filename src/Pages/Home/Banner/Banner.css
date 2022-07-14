@@ -63,7 +63,9 @@
 .carousel-indicators .active {
     background-color: orange;
 }
-
+.notFound-btn{
+    margin-top: 250px;
+}
 @media only screen and (max-width: 425px) {
     .hero-heading {
         font-size: 2.2rem;
@@ -77,17 +79,18 @@
         padding: .6rem 2rem;
         border-radius: 2rem;
         border: 2px solid #ffff;
-
     }
-}
-
-
-@media screen and (max-width: 425px) {
     .carousel-img {
         height: 220px;
     }
 
     .btn-color {
         padding: 7px 25px;
+    }
+    .notFound-card-img{
+        height: 340px !important;
+    }
+    .notFound-btn{
+        margin-top: 130px;
     }
 }

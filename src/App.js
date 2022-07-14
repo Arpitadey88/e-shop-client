@@ -12,6 +12,7 @@ import About from './Pages/Home/About/About';
 import AllProducts from './Pages/Home/AllProducts/AllProducts';
 import Home from './Pages/Home/Home/Home';
 import Items from './Pages/Home/Items/Item';
+import NotFound from './Pages/Home/NotFound/NotFound';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
@@ -54,6 +55,7 @@ function App() {
                 </Route>
               </Route>
               <Route exact path="/" element={<Home />}></Route>
+              <Route exact path='*' element={<NotFound />}></Route>
             </Routes>
           </Fragment>
           <Footer />

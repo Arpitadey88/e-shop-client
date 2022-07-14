@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <div className='header-bg fixed-top mb-5'>
             <nav className="navBar container ">
-                <a className='ms-3 ms-md-1 logoName text-decoration-none' href="/"><span className='span-e'>e</span><span className='span-shop'>Shop</span></a>
+                <a className='ms-3 ms-md-1 logoName text-decoration-none' href="/"><span className='span-e'>D'mod</span><span className='span-shop'>shop</span></a>
 
                 <ul className={toggleBar ? "navLinksToggle" : "navLinks"}
                     onClick={() => { setToggleBar(false) }}>

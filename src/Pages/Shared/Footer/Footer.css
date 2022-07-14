@@ -18,7 +18,8 @@
 }
 
 .social-links a:hover {
-  background: #FFC107;
+  background: orange;
+  color: white;
 }
 
 .dashboard-bg {
@@ -36,4 +37,26 @@
   font-size: 50px;
   font-weight: 900;
   text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .footer-area {
+    margin: 7px 0;
+  }
+
+  .footer-text {
+    border: 0;
+  }
+
+  .footer-text h4 {
+    font-size: 14px;
+  }
+
+  .footer-text h6 {
+    font-size: 12px;
+  }
+
+  .footer-text input {
+    font-size: 12px;
+  }
 }
