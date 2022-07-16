@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import banner1 from '../../../images/banner1.jpg';
-import banner2 from '../../../images/banner2.jpg';
-import banner3 from '../../../images/banner3.jpg';
+import banner1 from '../../../images/photo.jfif';
+import banner2 from '../../../images/banner3.jpg';
+import banner3 from '../../../images/banner4.jpg';
 import './Banner.css';
 
 const Banner = () => {
@@ -24,11 +24,11 @@ const Banner = () => {
                     <div className="carousel-item active">
                         <img src={banner1} className="d-block hero-img" alt="..." />
                         <div className="carousel-caption">
-                            <div className="row d-flex justify-content-center align-items-center">
-                                <div className="col-md-8 col-12">
+                            <div className="row d-flex  align-items-center">
+                                <div className="col-md-6 col-12">
                                     <h1 className="hero-heading">SHOP WISE WITH PRICE AND COMPARISON</h1>
                                 </div>
-                                <div className="col-md-4 col-12">
+                                <div className="col-md-6 col-12">
                                     <button onClick={() => navigate("/products")} className="carousel-btn">Find out More</button>
                                 </div>
                             </div>

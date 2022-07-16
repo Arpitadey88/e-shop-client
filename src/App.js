@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import AddProduct from './Pages/AddProduct/AddProduct';
+import AddReview from './Pages/DashBoard/AddReview/AddReview';
 import Dashboard from './Pages/DashBoard/DashBoard/Dashboard';
 import DashboardHome from './Pages/DashBoard/DashboardHome/DashboardHome';
 import MakeAdmin from './Pages/DashBoard/MakeAdmin/MakeAdmin';
@@ -14,6 +15,7 @@ import AllProducts from './Pages/Home/AllProducts/AllProducts';
 import Home from './Pages/Home/Home/Home';
 import Items from './Pages/Home/Items/Item';
 import NotFound from './Pages/Home/NotFound/NotFound';
+import Reviews from './Pages/Home/Reviews/Reviews';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Login/Register/Register';
@@ -46,17 +48,26 @@ function App() {
               <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>}>
                 <Route exact path="/dashboard" element={<DashboardHome />}>
                 </Route>
+
                 <Route path={`/dashboard/addProduct`} element={<AddProduct />}>
                 </Route>
+
                 <Route path={`/dashboard/myOrders`} element={<MyOrders />}>
                 </Route>
+
                 <Route path={`/dashboard/manageProducts`} element={<ManageProducts />}>
                 </Route>
+
                 <Route path={`/dashboard/manageOrders`} element={<ManageOrders />}>
                 </Route>
+
                 <Route path={`/dashboard/makeAdmin`} element={<MakeAdmin />}>
                 </Route>
+                
+                <Route path={`/dashboard/addReview`} element={<AddReview />}>
+                </Route>
               </Route>
+              <Route exact path="/reviews" element={<Reviews />}></Route>
               <Route exact path="/" element={<Home />}></Route>
               <Route exact path='*' element={<NotFound />}></Route>
             </Routes>

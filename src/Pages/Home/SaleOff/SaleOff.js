@@ -22,10 +22,10 @@ const SaleOff = () => {
                     <div className="row">
                         <div className="col-md-6 col-12 d-flex justify-content-center align-items-center">
                             <div className="sale-style dancingFont fw-bold">
-                                <h2 className='mt-md-0 mt-4 '>THE BEST SALE OFF</h2>
+                                <h2 className='mt-md-0 mt-3'>THE BEST SALE OFF</h2>
                                 <h1>50%</h1>
                                 <h3>On Shop</h3>
-                                <button to="/products" className="btn sale-btn rounded-pill my-1 px-5 py-md-2 py-1 fw-bold border-0">Shop Now</button>
+                                <button to="/products" className="btn sale-btn rounded-pill my-md-1 px-5 py-md-2  fw-bold border-0">Shop Now</button>
                             </div>
                         </div>
                         <div className="col-md-6 col-12">
@@ -37,8 +37,8 @@ const SaleOff = () => {
             </div>
             <div className="bg-white py-3">
             <div className='container' id='products'>
-                <h2 className="pt-md-5 pb-md-3 dancingFont fw-bold">Our Latest Products </h2>
-                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-4 mx-1 py-2">
+                <h2 className="pt-md-5 pb-md-3 dancingFont fw-bold" data-aos="fade-right">Our Latest Products </h2>
+                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-4 mx-1 pt-2">
                     {
                         products.map(product => <Product
                             key={product.id}
@@ -47,7 +47,7 @@ const SaleOff = () => {
                     }
                 </div>
                 <div className='text-center'>
-                <button onClick={() => navigate("/allProducts")} type="button" className="btn product-btn mt-md-2 mb-md-5">View All Products</button>
+                <button onClick={() => navigate("/allProducts")} type="button" className="btn product-btn mt-md-2 mt-0 mb-md-5 mb-3" data-aos="zoom-in">View All Products</button>
                 </div>
             </div>
             </div>

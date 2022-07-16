@@ -1,0 +1,21 @@
+.blogImage {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+  }
+  
+  .blogHero {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+  
+  @media (max-width: 499px) {
+    .blogImage {
+      height: 80px;
+    }
+  
+    .blogHero {
+      height: 160px;
+    }
+  }

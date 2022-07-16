@@ -50,10 +50,11 @@
   }
 
   .sale-area {
-    height: 90vh;
+    height: 440px;
   }
   .shopping-img {
-    height: 195px;
+    margin-top: 20px;
+    height: 210px;
     width: 100%;
   }
 

@@ -24,7 +24,7 @@ const Category = () => {
                         </p>
                     </div>
                     <div className="col-lg-2 col-md-12 col-sm-12">
-                        <button onClick={() => navigate("/products")} type="button" className="btn product-btn">All Products</button>
+                        <button onClick={() => navigate("/products")} type="button" className="btn product-btn" data-aos="zoom-in">All Products</button>
                     </div>
                 </div>
 

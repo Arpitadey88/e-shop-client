@@ -30,7 +30,7 @@ const Dashboard = () => {
 
                                 <Link style={{ textDecoration: "none", color: '#1E3163' }} to={`/dashboard/myOrders`}><h5 className='py-md-3 me-md-5'>My Orders</h5></Link>
 
-                                {/* <Link style={{ textDecoration: "none", color: '#1E3163' }} to={`/dashboard/makeAdmin`}><h5 className='py-md-3'>Make Admin</h5></Link> */}
+                                <Link style={{ textDecoration: "none", color: '#1E3163' }} to={`/dashboard/addReview`}><h5 className='py-md-3'>Add Feedback</h5></Link>
                             </div>
                             }
 
