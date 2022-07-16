@@ -79,7 +79,7 @@ const OrderDetails = () => {
                                 <th>Remove</th>
                             </tr>
                         </thead>
-                        {carts.length ? (
+                        {carts.length?(
                             <tbody>
                                 {carts?.map((pd) => (
                                     <tr key={pd._id}>
@@ -111,19 +111,21 @@ const OrderDetails = () => {
                                 ))}
                             </tbody>
                         ) :
-                            <tr>
-                                <td colSpan="4" className="text-center fw-bold">
-                                    <h1 className=''>Ooops your cart is empty !!</h1>
-                                    <h3>You didn't add any product yet!!</h3>
-                                    <h5 className="google-font my-1">please see our latest offer products 🙂!</h5>
-                                </td>
-                            </tr>                   
+                            (
+                                <tr>
+                                    <td colSpan="4" className="text-center fw-bold">
+                                        <h1 className=''>Ooops your cart is empty !!</h1>
+                                        <h3>You didn't add any product yet!!</h3>
+                                        <h5 className="google-font my-1">please see our latest offer products 🙂!</h5>
+                                    </td>
+                                </tr>
+                            )
                         }
                     </Table>
                 </div>
                 <div className='col-md-4 col-12'>
                     <h4 className="text-black ms-4">Cart Totals</h4>
-                    <Row style={{backgroundColor: '#EEEEEE'}} className="text-dark d-flex justify-content-center">
+                    <Row style={{ backgroundColor: '#EEEEEE' }} className="text-dark d-flex justify-content-center">
                         <Col xs={5} md={5} className="py-3 border border-secondary">
                             Subtotal
                         </Col>

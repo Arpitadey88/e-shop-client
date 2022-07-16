@@ -57,11 +57,11 @@ const Login = () => {
                             </div>
                         </div>
 
-                        <div className="text-center pt-4">
+                        <div className="text-center">
                             <Button className="px-4 py-1 border-0" variant="danger" size="lg" active type="submit">Login</Button>
                         </div>
                     </form>
-                    {isLoading && <div className="my-3 text-center"><Spinner animation="border" variant="info" /></div>}
+                    {isLoading && <div className="mt-5 text-center"><Spinner animation="border" variant="info" /></div>}
 
                     {user?.email && <div className='mt-md-4'><Alert className='text-center' variant="success">
                         Login Successfully !!
@@ -73,7 +73,7 @@ const Login = () => {
                     <div className="text-center my-4 fw-bold">-------------------OR--------------------</div>
                     <div className="text-center ">
                         <div>
-                            <img className='border border-1 rounded-start' style={{ height: '40px' }} src={google} alt="" />
+                            <img className='border border-1 rounded-start mt-md-4' style={{ height: '40px' }} src={google} alt="" />
                             <Button onClick={handleGoogleLogin} className=" px-4 py-1 rounded-0 rounded-end" variant="primary" size="lg" active>Google Sign In</Button>
                         </div>
 

@@ -16,7 +16,7 @@ const Category = () => {
                         <h5 data-aos="fade-right" data-aos-duration="1000">
                             Our <span>Products</span>
                         </h5>
-                        <h3 data-aos="fade-right">What Product We Offer</h3>
+                        <h3 className='dancingFont fw-bold' data-aos="fade-right">What Product We Offer</h3>
                     </div>
                     <div className="col-lg-5 col-md-12 col-sm-12">
                         <p className="text-secondary">

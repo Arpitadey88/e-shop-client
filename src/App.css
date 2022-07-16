@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 .App{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.dancingFont {
+  font-family: 'Dancing Script', cursive;
 }

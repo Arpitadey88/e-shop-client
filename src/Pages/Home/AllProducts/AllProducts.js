@@ -22,7 +22,7 @@ const AllProducts = () => {
 
     return (
         <div className='container my-5 product-bg text-center ' id='products'>
-            <h2 className="pt-md-5">Our Products </h2>
+            <h2 className="pt-md-5 dancingFont fw-bold">Our Products </h2>
 
             <div className="search-container w-25 border rounded-1 py-1 ms-auto me-5 my-md-4">
                 <input onChange={handleSearch} placeholder="&#xF002; Search" className="form-control w-100 border-0 fa" type="search" aria-label="Search" />

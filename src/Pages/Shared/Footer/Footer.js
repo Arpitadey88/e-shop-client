@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
                 <hr />
 
-                <div className="text-center">
+                <div className="text-center pb-2">
                     <div className="social-links d-flex align-items-center justify-content-center">
                         <a href className="linkedin"><i className="fab fa-linkedin"></i></a>
                         <a href className="twitter"><i className="fab fa-twitter"></i></a>

@@ -5,6 +5,7 @@ import AuthProvider from './contexts/AuthProvider/AuthProvider';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import Dashboard from './Pages/DashBoard/DashBoard/Dashboard';
 import DashboardHome from './Pages/DashBoard/DashboardHome/DashboardHome';
+import MakeAdmin from './Pages/DashBoard/MakeAdmin/MakeAdmin';
 import ManageOrders from './Pages/DashBoard/ManageOrders/ManageOrders';
 import ManageProducts from './Pages/DashBoard/ManageProducts/ManageProducts';
 import MyOrders from './Pages/DashBoard/Orders/MyOrders';
@@ -52,6 +53,8 @@ function App() {
                 <Route path={`/dashboard/manageProducts`} element={<ManageProducts />}>
                 </Route>
                 <Route path={`/dashboard/manageOrders`} element={<ManageOrders />}>
+                </Route>
+                <Route path={`/dashboard/makeAdmin`} element={<MakeAdmin />}>
                 </Route>
               </Route>
               <Route exact path="/" element={<Home />}></Route>

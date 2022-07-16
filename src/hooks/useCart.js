@@ -3,17 +3,17 @@ import { getStoredCart } from '../Pages/utilities/fakedb';
 
 const useCart = () => {
     const saveCart = getStoredCart();
-    // console.log(saveCart);
-    const [qut, setQut] = useState();
+    console.log(saveCart);
+    const [displayCart, setDisplayCart] = useState();
 
     useEffect(() => {
         let quantity = null;
         for (const key in saveCart) {
             quantity += parseInt(saveCart[key]);
         }
-        setQut(quantity);
-    }, [saveCart, qut]);
-    return {qut, setQut}
+        setDisplayCart(quantity);
+    }, [saveCart, displayCart]);
+    return {displayCart, setDisplayCart}
     ;
 };
 

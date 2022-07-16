@@ -22,23 +22,6 @@
   color: white;
 }
 
-.dashboard-bg {
-  background: linear-gradient(to right, rgba(250, 158, 44, .8), rgba(255, 54, 54, 0.8)), url("../../../images/dashboard.jpg") bottom center no-repeat;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  z-index: 500;
-}
-
-.dashboard-caption {
-  color: #fff;
-  font-size: 50px;
-  font-weight: 900;
-  text-align: center;
-}
-
 @media only screen and (max-width: 425px) {
   .footer-area {
     margin: 7px 0;

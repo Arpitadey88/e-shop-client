@@ -28,6 +28,7 @@
 .sale-btn {
   background-color: white;
   color: #FF136F;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .sale-btn:hover {
   background-color: orange;
