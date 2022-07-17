@@ -27,8 +27,8 @@
 
 .sale-btn {
   background-color: white;
-  color: #FF136F;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: crimson;
+  font-family: 'Baloo 2', cursive;
 }
 .sale-btn:hover {
   background-color: orange;

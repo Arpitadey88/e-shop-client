@@ -27,7 +27,6 @@ const ProductDetails = () => {
             title: "Add to cart successful",
         }).then((result) => {
             if (result.isConfirmed) {
-                // navigate("/orderDetails");
                 window.location.reload();
             }
         });

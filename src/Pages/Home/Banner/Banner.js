@@ -20,17 +20,18 @@ const Banner = () => {
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <div className="carousel-inner ">
+                <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src={banner1} className="d-block hero-img" alt="..." />
-                        <div className="carousel-caption">
-                            <div className="row d-flex  align-items-center">
-                                <div className="col-md-6 col-12">
-                                    <h1 className="hero-heading">SHOP WISE WITH PRICE AND COMPARISON</h1>
-                                </div>
-                                <div className="col-md-6 col-12">
-                                    <button onClick={() => navigate("/products")} className="carousel-btn">Find out More</button>
-                                </div>
+                        <div className="carousel-caption row d-flex justify-content-between align-items-center">
+                            <div className="col-md-6 col-12">
+                                <h1 className="hero-heading">SHOP WISE WITH PRICE &amp; COMPARISON</h1>
+                            </div>
+                            <div className="col-md-6 col-12">
+                                <button onClick={() => navigate("/products")} className="carousel-btn">Find out More</button>
+                            </div>
+                            <div className="row">
+
                             </div>
                         </div>
                     </div>
@@ -53,7 +54,7 @@ const Banner = () => {
                         <div className="carousel-caption">
                             <div className="row d-flex justify-content-center align-items-center">
                                 <div className="col-md-8 col-12">
-                                    <h1 className="hero-heading">DISCOVER &amp; BUY MORE IN LOW COST</h1>
+                                    <h1 className="hero-heading">DISCOVER &amp; <br /> BUY MORE <br /> IN LOW COST</h1>
                                 </div>
                                 <div className="col-md-4 col-12">
                                     <button onClick={() => navigate("/products")} className="carousel-btn">Find out More</button>

@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-.App{
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Teko:wght@500;600&family=Tourney:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+.App {
+  font-family: 'Baloo 2', cursive;
 }
 
 body::-webkit-scrollbar {

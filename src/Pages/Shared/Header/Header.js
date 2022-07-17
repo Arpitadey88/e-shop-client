@@ -6,6 +6,7 @@ import './Header.css';
 
 const Header = () => {
     const { user, logOut } = useAuth();
+    console.log(user);
     const [toggleBar, setToggleBar] = useState(false);
     const { displayCart } = useCart();
     return (
