@@ -14,7 +14,7 @@ const Product = ({ product }) => {
             </div>
 
             <div className="px-1 pt-2">
-                <h6 style={{ color: '#111b36' }}> {title} </h6>
+                <h6 style={{ color: '#111b36' }}> {title?.slice(0, 50)} </h6>
                 {/* <p className='mb-1' style={{ color: 'slategrey' }}> {category}</p> */}
                 <Rating className='mb-1'
                     initialRating={rating}

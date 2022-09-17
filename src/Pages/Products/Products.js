@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+// import loader from '../../images/load.gif';
 import './Products.css';
 
 const Products = () => {
@@ -15,6 +16,13 @@ const Products = () => {
         // console.log(products);
     }, []);
 
+    if (products.length < 1) {
+        // console.log(products);
+        return <div className='container'>
+            <h5 className='text-center'>loading...</h5>
+        </div>
+    }
+
     const handleSearch = event => {
         const searchText = event.target.value;
         const matchedProducts = products.filter(product => product.title.toLowerCase().includes(searchText.toLowerCase()));
@@ -26,7 +34,6 @@ const Products = () => {
         }
     }
 
-
     return (
         <div className='container my-5 product-bg' id='products'>
             <div className="row d-flex align-items-center justify-content-between  mx-auto py-md-3">
@@ -34,7 +41,7 @@ const Products = () => {
                     <h2 className="dancingFont fw-bold" data-aos="fade-right">Product Categoris </h2>
                 </div>
                 <div className="col-md-6 search-container border rounded-1 me-3 py-1 px-0 my-md-0 my-3"
-                data-aos="fade-left">
+                    data-aos="fade-left">
                     <input onChange={handleSearch} placeholder="&#xF002; Search" className="form-control w-100 border-0 fa mx-0" type="search" aria-label="Search" />
                 </div>
             </div>

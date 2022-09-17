@@ -3,7 +3,6 @@ import { getStoredCart } from '../Pages/utilities/fakedb';
 
 const useCart = () => {
     const saveCart = getStoredCart();
-    console.log(saveCart);
     const [displayCart, setDisplayCart] = useState();
 
     useEffect(() => {
@@ -13,7 +12,7 @@ const useCart = () => {
         }
         setDisplayCart(quantity);
     }, [saveCart, displayCart]);
-    return {displayCart, setDisplayCart}
+    return {saveCart, displayCart, setDisplayCart}
     ;
 };
 

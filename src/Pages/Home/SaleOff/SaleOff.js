@@ -15,6 +15,12 @@ const SaleOff = () => {
             .then(data => setProducts(data.slice(4, 12)));
     }, [])
 
+    if (products.length < 1) {
+        return <div className='container text-center my-md-5 py-md-5'>
+            <h5 className='text-center'>loading...</h5>
+        </div>
+    }
+
     return (
         <>
             <div className="sale-area text-center">
@@ -36,20 +42,20 @@ const SaleOff = () => {
 
             </div>
             <div className="bg-white py-3">
-            <div className='container' id='products'>
-                <h2 className="pt-md-5 pb-md-3 dancingFont fw-bold" data-aos="fade-right">Our Latest Products </h2>
-                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-4 mx-1 pt-2">
-                    {
-                        products.map(product => <Product
-                            key={product.id}
-                            product={product}>
-                        </Product>)
-                    }
+                <div className='container' id='products'>
+                    <h2 className="pt-md-5 pb-md-3 dancingFont fw-bold" data-aos="fade-right">Our Latest Products </h2>
+                    <div className="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-4 mx-1 pt-2">
+                        {
+                            products.map(product => <Product
+                                key={product.id}
+                                product={product}>
+                            </Product>)
+                        }
+                    </div>
+                    <div className='text-center'>
+                        <button onClick={() => navigate("/allProducts")} type="button" className="btn product-btn mt-md-2 mt-0 mb-md-5 mb-3" data-aos="zoom-in">View All Products</button>
+                    </div>
                 </div>
-                <div className='text-center'>
-                <button onClick={() => navigate("/allProducts")} type="button" className="btn product-btn mt-md-2 mt-0 mb-md-5 mb-3" data-aos="zoom-in">View All Products</button>
-                </div>
-            </div>
             </div>
             {/* <Items></Items> */}
         </>

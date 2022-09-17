@@ -6,7 +6,7 @@ const Footer = () => {
 
         <div style={{backgroundColor: '#CFD2CF'}}>
             <div className="container pt-2 pb-0">
-                <hr />
+                <hr className='mb-0' />
                 <div className="row row-cols-2 row-cols-md-2 row-cols-lg-4 g-2 g-md-4 footer-area mt-0">
                     <div className="col footer-text">
                         <h4 className="fw-bold">Company</h4>
@@ -35,9 +35,9 @@ const Footer = () => {
                         </form>
                     </div>
                 </div>
-                <hr />
+                <hr className='my-0 my-md-2' />
 
-                <div className="text-center pb-2">
+                <div className="text-center pb-1">
                     <div className="social-links d-flex align-items-center justify-content-center">
                         <a href className="linkedin"><i className="fab fa-linkedin"></i></a>
                         <a href className="twitter"><i className="fab fa-twitter"></i></a>

@@ -14,7 +14,7 @@ const Banner = () => {
 
     return (
         <div className='pt-md-5' id='banner'>
-            <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+            <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -28,7 +28,7 @@ const Banner = () => {
                                 <h1 className="hero-heading">SHOP WISE WITH PRICE &amp; COMPARISON</h1>
                             </div>
                             <div className="col-md-6 col-12">
-                                <button onClick={() => navigate("/products")} className="carousel-btn">Find out More</button>
+                                <button onClick={() => navigate("/allProducts")} className="carousel-btn">Find out More</button>
                             </div>
                             <div className="row">
 

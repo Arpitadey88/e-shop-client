@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import useCart from '../../../hooks/useCart';
+import cartIcon from '../../../svg/shopping-cart-solid.svg';
+// import { MdShoppingCart } from "react-icons/md";
 import './Header.css';
 
 const Header = () => {
@@ -12,15 +14,16 @@ const Header = () => {
     return (
         <div className='header-bg fixed-top mb-5'>
             <nav className="navBar container ">
-                <a className='ms-1 ms-md-1 logoName text-decoration-none dancingFont' href="/"><span className='span-e'>D'mod</span><span className='span-shop'>  shop</span></a>
+                <a className='ms-3 ms-md-1 logoName text-decoration-none dancingFont' href="/"><span className='span-e'>D'mod</span><span className='span-shop'>  shop</span></a>
 
                 <ul className={toggleBar ? "navLinksToggle" : "navLinks"}
                     onClick={() => { setToggleBar(false) }}>
                     <Link to="/" className="link"><li className="lists">Home</li></Link>
                     <Link to="/about" className="link"><li className="lists">About</li></Link>
                     <Link to="/allProducts" className="link"><li className="lists">Products</li></Link>
-                    <Link to="/orderDetails" className="link"><li className="lists"><i className="bi bi-cart2 fs-5 fw-bold cart"></i> {" "}
-                        <span className="cart text-decoration-none">{displayCart}</span>
+                    <Link to="/orderDetails" className="link"><li className="lists d-flex cart-icon">
+                        <img style={{height: '13px'}} className="mt-0" src={cartIcon} alt="" />
+                        <span className="cart-text">{displayCart}</span>
                     </li></Link>
                     {
                         user?.email ?

@@ -20,7 +20,7 @@ const Category = () => {
                     </div>
                     <div className="col-lg-5 col-md-12 col-sm-12">
                         <p className="text-secondary">
-                            Our best collections for you that will meet your need!! Please your eyes on <span styles={{color: '#f0a202'}}>trending items </span> at <span className='text-dark '>e</span><span styles={{color: '#f0a202'}}>Shop</span>
+                            Our best collections for you that will meet your need!! Please your eyes on <span styles={{color: '#f0a202'}}>trending items </span> at <span styles={{color: '#f0a202'}}>D'mod </span>shop
                         </p>
                     </div>
                     <div className="col-lg-2 col-md-12 col-sm-12">
