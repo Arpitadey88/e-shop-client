@@ -7,7 +7,7 @@ const ManageOrders = () => {
   const Swal = require("sweetalert2");
   const [orders, setOrders] = useState([]);
   useEffect(() => {
-    fetch("https://mysterious-tor-42417.herokuapp.com/orders")
+    fetch("https://e-shop-server-w0fd.onrender.com/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [orders]);
@@ -24,7 +24,7 @@ const ManageOrders = () => {
       cancelButtonText: "No",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://mysterious-tor-42417.herokuapp.com/deleteOrders/${id}`, {
+        fetch(`https://e-shop-server-w0fd.onrender.com/deleteOrders/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -47,7 +47,7 @@ const ManageOrders = () => {
       id: id,
       status: "approved",
     };
-    fetch("https://mysterious-tor-42417.herokuapp.com/orderStatusUpdate", {
+    fetch("https://e-shop-server-w0fd.onrender.com/orderStatusUpdate", {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(status),
@@ -110,11 +110,11 @@ const ManageOrders = () => {
                   {order.status === "approved" ? (
                     "Approved"
                   ) : (
-                      <button className="rmv-btn"
-                        onClick={() => handleStatusUpdate(order._id)}
-                      >
-                        Approved
-                      </button>
+                    <button className="rmv-btn"
+                      onClick={() => handleStatusUpdate(order._id)}
+                    >
+                      Approved
+                    </button>
                   )}
                 </td>
                 <td className=" text-white ">

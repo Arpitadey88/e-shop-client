@@ -8,7 +8,7 @@ const MyOrders = () => {
   const email = user.email;
   // console.log(email);
   useEffect(() => {
-    fetch(`https://mysterious-tor-42417.herokuapp.com/myOrders/${email}`)
+    fetch(`https://e-shop-server-w0fd.onrender.com/myOrders/${email}`)
       .then((res) => res.json())
       .then((data) => setMyOrders(data));
   }, [email]);

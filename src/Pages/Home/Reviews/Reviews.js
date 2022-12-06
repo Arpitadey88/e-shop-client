@@ -7,7 +7,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://mysterious-tor-42417.herokuapp.com/reviews')
+        fetch('https://e-shop-server-w0fd.onrender.com/reviews')
             .then(res => res.json())
             .then(data => setReviews(data));
     }, [])

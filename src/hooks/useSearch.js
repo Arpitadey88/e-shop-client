@@ -1,13 +1,14 @@
-import  { useEffect, useState }  from 'react';
+import { useEffect, useState } from 'react';
 
 const useSearch = () => {
-    
+
     const [products, setProducts] = useState([]);
     const [displayProducts, setDisplayProducts] = useState([]);
     useEffect(() => {
-        fetch('https://mysterious-tor-42417.herokuapp.com/products')
+        fetch('https://e-shop-server-w0fd.onrender.com/products')
             .then(res => res.json())
-            .then(data => {setProducts(data);
+            .then(data => {
+                setProducts(data);
                 setDisplayProducts(data);
             });
         // console.log(products);
@@ -19,7 +20,7 @@ const useSearch = () => {
         setDisplayProducts(matchedProducts);
     }
 
-    return  [displayProducts, setDisplayProducts, handleSearch];
+    return [displayProducts, setDisplayProducts, handleSearch];
 };
 
 export default useSearch;

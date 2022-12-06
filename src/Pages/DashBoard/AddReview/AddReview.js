@@ -9,7 +9,7 @@ const AddReview = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('https://mysterious-tor-42417.herokuapp.com/reviews', data)
+        axios.post('https://e-shop-server-w0fd.onrender.com/reviews', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {

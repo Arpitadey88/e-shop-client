@@ -9,7 +9,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('https://mysterious-tor-42417.herokuapp.com/addProducts', data)
+        axios.post('https://e-shop-server-w0fd.onrender.com/addProducts', data)
             .then(res => {
                 if (res.data.insertedId) {
                     Swal.fire({
@@ -25,11 +25,11 @@ const AddProduct = () => {
         <div className="add-product">
             <h1 className="text-center" style={{ color: '#1E3163' }}>Add New Product</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("image")}  placeholder="Enter Image Url" />
+                <input {...register("image")} placeholder="Enter Image Url" />
                 <input {...register("title")} required placeholder="Title" />
                 <input {...register("category")} required placeholder="Category" />
                 <textarea {...register("description")} required placeholder="Description" />
-                <input {...register("price")}  required placeholder="Price" />
+                <input {...register("price")} required placeholder="Price" />
                 <input {...register("rating")} required placeholder="Rating" />
                 {errors.exampleRequired && <span>This field is required</span>}
                 <input type="submit" />

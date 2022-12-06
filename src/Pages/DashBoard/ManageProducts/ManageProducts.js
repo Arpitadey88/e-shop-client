@@ -6,7 +6,7 @@ const ManageProducts = () => {
   const [products, setProducts] = useState([]);
   let count = 0;
   useEffect(() => {
-    fetch("https://mysterious-tor-42417.herokuapp.com/products")
+    fetch("https://e-shop-server-w0fd.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [products]);
@@ -23,7 +23,7 @@ const ManageProducts = () => {
       cancelButtonText: "No",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://mysterious-tor-42417.herokuapp.com/deleteSingleProduct/${id}`, {
+        fetch(`https://e-shop-server-w0fd.onrender.com/deleteSingleProduct/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -45,7 +45,7 @@ const ManageProducts = () => {
       <h2 style={{ color: '#1E3163' }} className="fs-3 fw-bold text-center">
         <i style={{ color: '#1E3163' }} className="fas fa-shopping-bag "></i> Product Information : {products.length}
       </h2>
-      <hr className="mx-auto w-50 bg-dark"/>
+      <hr className="mx-auto w-50 bg-dark" />
       {products.length ? (
         <Table style={{ backgroundColor: '#06283D' }} responsive striped hover>
           {/* table header */}

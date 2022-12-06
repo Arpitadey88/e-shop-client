@@ -10,7 +10,7 @@ const SaleOff = () => {
     const [products, setProducts] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
-        fetch('https://mysterious-tor-42417.herokuapp.com/products')
+        fetch('https://e-shop-server-w0fd.onrender.com/products')
             .then(res => res.json())
             .then(data => setProducts(data.slice(4, 12)));
     }, [])

@@ -11,7 +11,7 @@ const OrderDetails = () => {
     const [carts, setCarts] = useState([]);
 
     useEffect(() => {
-        fetch(`https://mysterious-tor-42417.herokuapp.com/products`)
+        fetch(`https://e-shop-server-w0fd.onrender.com/products`)
             .then(res => res.json())
             .then(data => setProducts(data));
 
@@ -79,7 +79,7 @@ const OrderDetails = () => {
                                 <th>Remove</th>
                             </tr>
                         </thead>
-                        {carts.length?(
+                        {carts.length ? (
                             <tbody>
                                 {carts?.map((pd) => (
                                     <tr key={pd._id}>

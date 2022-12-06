@@ -15,7 +15,7 @@ const ProductDetails = () => {
     const { _id } = product;
 
     useEffect(() => {
-        fetch(`https://mysterious-tor-42417.herokuapp.com/products/${productId}`)
+        fetch(`https://e-shop-server-w0fd.onrender.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [])

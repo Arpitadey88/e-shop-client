@@ -6,7 +6,7 @@ const Search = () => {
     const [products, setProducts] = useState([]);
     const [displayProducts, setDisplayProducts] = useState([]);
     useEffect(() => {
-        fetch('https://mysterious-tor-42417.herokuapp.com/products')
+        fetch('https://e-shop-server-w0fd.onrender.com/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
@@ -26,9 +26,9 @@ const Search = () => {
     return (
         <div className='ms-5 mt-5'>
             <form className="d-flex" role="search">
-                <input  onChange={handleSearch}  placeholder="&#xF002; Search" className="form-control w-100 border-0 fa" type="search" aria-label="Search" />
+                <input onChange={handleSearch} placeholder="&#xF002; Search" className="form-control w-100 border-0 fa" type="search" aria-label="Search" />
             </form>
-        
+
             <div className="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-4 mx-1 py-2">
                 {
                     displayProducts.map(product => <Product
